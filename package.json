@@ -1,0 +1,30 @@
+{
+  "name": "BigLeaderNext",
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.5.1",
+    "es6-promise": "4.1.1",
+    "express": "^4.16.3",
+    "isomorphic-unfetch": "2.0.0",
+    "next": "^6.0.3",
+    "next-redux-saga": "3.0.0-beta.1",
+    "next-redux-wrapper": "2.0.0-beta.6",
+    "prettier": "^1.13.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0",
+    "redux-saga": "0.16.0",
+    "styled-components": "^3.3.0"
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "2.13.2"
+  }
+}
