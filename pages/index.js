@@ -1,10 +1,15 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import styled, {ThemeProvider} from 'styled-components'
+import styled, {ThemeProvider, injectGlobal} from 'styled-components'
 
 import {loadData, startClock, tickClock} from '../actions'
 import Page from '../components/page'
+import {BackgroundImage, Box, Card, Small, Subhead, Text} from "rebass";
 
+injectGlobal`
+  * { box-sizing: border-box; margin: 0; }
+  body { margin: 0; background:aquamarine; }
+`
 class Index extends React.Component {
   static async getInitialProps (props) {
     const { store, isServer } = props.ctx
@@ -32,7 +37,20 @@ class Index extends React.Component {
     `
     return (
     <ThemeProvider theme={theme}>
-      <Title>Hello styled</Title>
+      <div>
+        <Title>Hello styled</Title>
+        <Box width={1/3} mt={4} ml={'auto'} mr={'auto'}>
+          <Card>
+            <BackgroundImage src={'static/lolis.jpg'} />
+            <Box p={1}>
+              <Subhead>Card</Subhead>
+              <Small>Small meta text</Small>
+              <Text>Small meta text</Text>
+            </Box>
+          </Card>
+        </Box>
+
+      </div>
 {/*
       <Page title='Index Page' linkTo='/other' NavigateTo='Other Page' />
 */}
