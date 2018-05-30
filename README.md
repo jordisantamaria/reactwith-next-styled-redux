@@ -1,4 +1,4 @@
-## Boilerplate created with react, redux, redux-saga, nextjs, styled-components with rebass
+## Boilerplate created with react, redux, redux-saga, nextjs and styled-components with rebass
 
 Example is visible here:
 https://jordiviva.github.io/reactwith-next-styled-redux/
